@@ -1,0 +1,87 @@
+/* 
+#profile-card {
+  background-color: hsla(60, 100%, 50%, .4);
+}
+
+#head, #content {
+  background-color: green;
+}
+
+#profile-image, #name-headline, #p-about, #section-links {
+  background-color: purple;
+} */
+
+/* CSS-reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  
+  /* Pozicionálás */
+  
+  .profile-card {
+    width: 480px;
+    max-width: calc(100vw - 10px); /* 100vw = 100% vw = viewport width (böngészőablak szélessége) */
+  }
+  
+  /* Pozícionálás függőlegesen középre Flexboxszal */
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* vh = viewport height (böngészőablak magassága) */
+  }
+  
+  /* Pozícionálás a fő konténeren belül középre */
+  
+  #head, #content {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  img {
+    width: 80px;
+    height: 110px;
+    border-radius: 10%;
+    padding: 3px;
+    background-color: #f73eb0;
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(50%);
+  }
+  
+  /* Az alap konténerből kimozgatás felfelé */
+  
+  #profile-image {
+    margin-top: -20px;
+  }
+  
+  #head, #p-about {
+    margin-bottom: 5%;
+  }
+  
+  #content {
+    padding: 5% 10%;
+    border-top: 1px solid hsla(0, 0%, 30%, .8);
+  }
+  
+  body {
+    background: url('background-photo.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  #profile-card {
+    background-color: hsla(0, 0%, 100%, .8);
+    border-radius: 4px;
+    box-shadow: hsla(327, 75%, 55%, 0.8) 10px 10px 80px;
+  }
+  
+  img:hover {
+    transform: scale(1.5);
+    filter: grayscale(10%);
+  }
+  
